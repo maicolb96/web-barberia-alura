@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Contactanos</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/products.css">
+    <link rel="stylesheet" href="styles/contacts.css">
+    <link rel="shortcut icon" href="images/icon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div id="div1Header">
+            <div id="divLogo">
+                <img src="images/logo-blanco.png" alt="logo">
+            </div>
+            <nav>
+                <ul id="menu">
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="products.html">PRODUCTOS</a></li>
+                    <li><a href="contacto.html">CONTACTANOS</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="colors_barber">
+            <img src="images/bannerColors.jpg" alt="colors_barber">
+        </div>
+
+    </header>
+
+    <main>
+        <section id="sectionForm">
+
+            <form id="formContact">
+
+                <fieldset>
+                    <legend id="formH1">CONTÁCTANOS</legend>
+
+                    <label class="lbInput" for="names">Nombre y Apellido</label>
+                    <input class="input" type="text" name="names" id="names" required>
+
+                    <label class="lbInput" for="mail">Correo Electrónico</label>
+                    <input placeholder="mail@server.com" class="input" type="email" name="mail" id="mail" required>
+
+                    <label class="lbInput" for="phone">Teléfono</label>
+                    <input placeholder="(xx) xxx xxx xxxx" class="input" type="number" name="phone" id="phone" required>
+
+                    <label class="lbInput" for="coments">Comentarios</label>
+                    <textarea class="input" name="coments" id="coments" cols="30" rows="10"></textarea>
+
+                    <fieldset class="divText">
+                        <legend class="lbInput">¿Como te gustaría ser contactado?</legend>
+
+                        <label class="lbInput lbRadio" for="wppRadio">
+                            <input type="radio" name="contactRadio" id="wppRadio" checked>
+                            WhatsApp
+                        </label>
+
+                        <label class="lbInput lbRadio" for="mailRadio">
+                            <input type="radio" name="contactRadio" id="mailRadio">
+                            Correo Electrónico
+                        </label>
+
+                        <label class="lbInput lbRadio" for="celRadio">
+                            <input type="radio" name="contactRadio" id="celRadio">
+                            Celular
+                        </label>
+
+                    </fieldset>
+
+                    <fieldset class="divText">
+                        <legend class="lbInput">¿En que horario prefieres ser contactado?</legend>
+
+                        <select name="hour_select" id="hour_select">
+                            <option value="Mañana">Mañana</option>
+                            <option value="Tarde">Tarde</option>
+                            <option value="Noche">Noche</option>
+                        </select>
+                    </fieldset>
+
+                    <div class="divText">
+                        <legend id="pInfo" class="lbInput">
+                            <input type="checkbox" name="checkInfo" id="checkInfo" checked>
+                            ¿Te gustaría recibir información por correo electrónico?
+                        </legend>
+
+                    </div>
+
+                    <input id="buttonForm" type="submit" value="Enviar">
+
+                </fieldset>
+            </form>
+        </section>
+
+        <section>
+            <fieldset id="tableField">
+                <legend id="formH1">HORARIO</legend>
+                <img src="images/hour.png" alt="hour">
+                <table class="table">
+                    <tr class="title">
+                        <td>DÍAS</td>
+                        <td>HORARIO</td>
+                    </tr>
+                    <tr class="items_table">
+                        <td>Lunes - Viernes</td>
+                        <td>08h - 20h</td>
+                    </tr>
+                    <tr class="items_table">
+                        <td>Sábado</td>
+                        <td>10h - 19h</td>
+                    </tr>
+                    <tr class="items_table">
+                        <td>Domingo - Festivos</td>
+                        <td>10h - 18h</td>
+                    </tr>
+                </table>
+            </fieldset>
+        </section>
+        <button id="upperButton">▲</button>
+    </main>
+
+    <script src="js/functions.js"></script>
+</body>
+
+<footer>
+    <div id="colors_barber">
+        <img src="images/bannerColors.jpg" alt="colors_barber">
+    </div>
+    <img src="images/logo-blanco.png" alt="logoFooter">
+    <p>© Copyright Barbería Alura - 2023</p>
+    <span>Powered by: Michael Blandón</span>
+</footer>
+
+</html>

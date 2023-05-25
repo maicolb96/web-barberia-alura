@@ -1,0 +1,88 @@
+#sectionForm{
+    text-align: center;
+}
+
+#formContact{
+    width: auto;
+    margin: 100px;
+}
+
+.input{
+    display: block;
+    margin: 10px auto;
+    width: 40%;
+    height: 35px;
+    padding-left: 10px;
+}
+
+#buttonForm{
+    display: block;
+    margin: 30px auto;
+    width: 42%;
+    height: 40px;
+    padding-left: 10px;
+    border: none;
+    background-color: red;
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: 1s all;
+}
+
+#buttonForm:hover{
+    background-color: rgb(71, 71, 71);
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+
+#formH1{
+    font-size: 30px;
+    margin-top: 100px;
+}
+
+#coments{
+    height: 200px !important;
+}
+
+.divText{
+    margin: 50px auto;
+    width: 42%;
+    text-align: left;
+}
+
+.lbRadio{
+    display: block;
+}
+
+#hour_select{
+    padding: 5px;
+    width: 100px;
+}
+
+@media screen and (max-width: 925px){
+    #formContact {
+        width: auto;
+        margin: 100px 10px;
+    }
+
+    .input {
+        display: block;
+        margin: 10px auto;
+        width: 70%;
+        height: 35px;
+        padding-left: 10px;
+    }
+
+    .divText {
+        margin: 50px auto;
+        width: 70%;
+        text-align: left;
+    }
+
+    #tableField {
+        margin: 100px 10px;
+    }
+}
+
+

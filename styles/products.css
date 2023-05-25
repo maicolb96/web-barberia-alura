@@ -1,0 +1,87 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+section{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.targets{
+    display: flex;
+    padding: 100px 120px;
+}
+
+.target{
+    text-align: center;
+    display: inline-grid;
+    width: 100%;
+    margin-left: 30px;
+    border: 2px solid black;
+    border-radius: 1em;
+    padding: 20px;
+    transition: 1s transform;
+}
+
+.target:hover{
+    border-color: brown;
+    transform: scale(1.1);
+}
+
+.target:active{
+    border-color: rgb(49, 189, 107);
+}
+
+.target img{
+    display:block;
+    margin: auto;
+    width: 100%;
+}
+
+.target label{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+@media screen and (max-width: 1000px) and (min-width: 601px){
+    .targets{
+        display: flex;
+        padding: 0px 10px 100px;
+    }
+
+    .target{
+        text-align: center;
+        display: inline-block;
+        width: 20%;
+        margin: 20px auto;
+        border: 2px solid black;
+        border-radius: 1em;
+        padding: 20px;
+        transition: 1s transform;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .targets{
+        display: block;
+        padding: 0px 10px 100px;
+    }
+
+    .target{
+        text-align: center;
+        display: block;
+        width: 40%;
+        margin: 20px auto;
+        border: 2px solid black;
+        border-radius: 1em;
+        padding: 20px;
+        transition: 1s transform;
+    }
+}
+
+
+
